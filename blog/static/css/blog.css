@@ -3,14 +3,10 @@ h1 a {
     font-family: 'Lobster';
 }
 
-body {
-    padding-left: 15px;
-}
-
 .page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    background-color: silver;
+    margin-top: 0 !important;
+    padding: 20px 20px 20px 40px !important;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -28,6 +24,7 @@ h1, h2, h3, h4 {
 }
 
 .date {
+    float:right;
     color: #828282;
 }
 
@@ -42,18 +39,61 @@ h1, h2, h3, h4 {
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 26pt;
+    font-size: 20pt;
     margin-right: 20px;
 }
 
 .post {
-    margin-bottom: 70px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+    text-decoration:none !important;
+}
+
+.post h1{
+    margin-top:0;
+}
+
+.post-list{
+    padding:20px;
+    border:solid 1px silver;
+    border-radius:20px 20px;
+}
+
+.post-list h1{
+    font-size:20px;
+    font-weight: bold;
 }
 
 .comment {
     margin: 20px 0px 20px 20px;
+}
+
+.page-footer{
+    background-color:silver;
+    margin-bottom:0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-footer a, .page-footer a span{
+    color:#ffffff;
+    font-size: 25px;
+}
+
+
+.page-footer p{
+    color:#ffffff;
+    text-align:center;
+    padding: 25px;
+    font-size: 15px;
+}
+
+@media screen and (max-width:599px){
+  html{
+    width:auto;
+  }
+
 }
